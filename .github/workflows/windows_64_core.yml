@@ -70,7 +70,7 @@ jobs:
       - set_variables
     strategy:
       matrix:
-        os: [Amrita_windows_64_core, Amrita_windows_64_core]
+        os: [Amrita_windows_64_core_publicrepo, Amrita_windows_64_core_publicrepo]
         i: ${{ fromJSON(needs.set_variables.outputs.iterator) }}
       fail-fast: false
       # Increase if using ITERATIONS > 3
